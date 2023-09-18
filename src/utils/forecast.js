@@ -20,7 +20,10 @@ export const forecast = (latitude, longtitude, callback) => {
                 body.location.name + 
                 '. It feels like ' + 
                 body.current.feelslike + 
-                ' degrees.');   
+                ' degrees. The humidity is ' + 
+                body.current.humidity + 
+                '%. Precipitation level is ' +
+                body.current.precip + ' (mm).');   
         }
     })
 }
